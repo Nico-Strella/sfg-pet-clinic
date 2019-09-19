@@ -4,8 +4,9 @@ import java.util.Set;
 
 import demo.springframework.sfgpetclinic.model.Pet;
 import demo.springframework.sfgpetclinic.services.CrudService;
+import demo.springframework.sfgpetclinic.services.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
