@@ -8,7 +8,7 @@ import demo.springframework.sfgpetclinic.model.Vet;
 import demo.springframework.sfgpetclinic.services.VetService;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
