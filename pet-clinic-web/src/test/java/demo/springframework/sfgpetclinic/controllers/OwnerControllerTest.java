@@ -18,7 +18,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -38,15 +37,12 @@ class OwnerControllerTest {
 
     private final Long ID_1 = 1L;
     private final Long ID_2 = 2L;
-
-    @Mock
-    private OwnerService ownerService;
-
-    @InjectMocks
-    private OwnerController controller;
-
     Set<Owner> owners;
     MockMvc mockMvc;
+    @Mock
+    private OwnerService ownerService;
+    @InjectMocks
+    private OwnerController controller;
 
     @BeforeEach
     void setUp() {
